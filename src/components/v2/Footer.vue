@@ -2,10 +2,10 @@
 import { RouterLink } from "vue-router";
 
 const informasi = [
-  { name: "Tentang kami", url: "/about" },
-  { name: "Blog", url: "/blog" },
-  { name: "Syarat dan Ketentuan", url: "#" },
-  { name: "Kebijakan Privasi", url: "/privacy" },
+  { name: "Tentang kami", url: "/SahazNetwork/about" },
+  { name: "Blog", url: "/SahazNetwork/blog" },
+  { name: "Syarat dan Ketentuan", url: "/SahazNetwork/terms" },
+  { name: "Kebijakan Privasi", url: "/SahazNetwork/privacy" },
 ];
 </script>
 

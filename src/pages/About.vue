@@ -1,5 +1,13 @@
 <script setup lang="ts">
+import { onMounted } from "vue";
 import Contact from "./Contact.vue";
+
+onMounted(() => {
+  scrollTo({
+    behavior: "smooth",
+    top: 0,
+  });
+});
 </script>
 
 <template>

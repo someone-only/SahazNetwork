@@ -1,5 +1,7 @@
 <script setup lang="ts">
+import { onMounted } from 'vue';
 import CardProduct from "../components/v2/CardProduct.vue";
+
 const paketan = [
   {
     speed: "100Mbps",
@@ -29,6 +31,13 @@ const paketan = [
     ],
   },
 ];
+
+onMounted(() => {
+  scrollTo({
+    behavior: "smooth",
+    top: 0,
+  });
+});
 </script>
 
 <template>

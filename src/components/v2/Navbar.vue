@@ -2,10 +2,10 @@
 import { ref } from "vue";
 
 const links = [
-  { name: "Home", url: "/" },
-  { name: "Tentang Kami", url: "/about" },
-  { name: "Harga", url: "/price" },
-  { name: "Hubungi Kami", url: "/contact" },
+  { name: "Home", url: "/SahazNetwork" },
+  { name: "Tentang Kami", url: "/SahazNetwork/about" },
+  { name: "Harga", url: "/SahazNetwork/price" },
+  { name: "Hubungi Kami", url: "/SahazNetwork/contact" },
 ];
 const isOpen = ref(false);
 </script>
@@ -21,7 +21,10 @@ const isOpen = ref(false);
       >
         <span
           class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
-          >Sahaz<span class="bg-clip-text text-transparent bg-gradient-to-r from-primary-100 to-primary-200">Network</span>
+          >Sahaz<span
+            class="bg-clip-text text-transparent bg-gradient-to-r from-primary-100 to-primary-200"
+            >Network</span
+          >
         </span>
       </RouterLink>
       <button

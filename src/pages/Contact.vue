@@ -1,3 +1,14 @@
+<script setup lang="ts">
+import { onMounted } from 'vue';
+
+onMounted(() => {
+  scrollTo({
+    behavior: "smooth",
+    top: 0,
+  });
+});
+</script>
+
 <template>
   <section class="bg-white dark:bg-gray-900">
     <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">

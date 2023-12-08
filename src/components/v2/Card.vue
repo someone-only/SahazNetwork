@@ -5,13 +5,11 @@
     <div
       class="w-80 p-6 bg-white border border-gray-200 rounded-lg shadow md:w-[80%] dark:bg-gray-800 dark:border-gray-700"
     >
-      <a href="#">
-        <h5
-          class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white"
-        >
-          Cek Jangkauan Wilayah
-        </h5>
-      </a>
+      <h5
+        class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white"
+      >
+        Cek Jangkauan Wilayah
+      </h5>
 
       <form>
         <label

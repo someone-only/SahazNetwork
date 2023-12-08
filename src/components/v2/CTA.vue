@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { RouterLink } from "vue-router";
 defineProps(["cta"]);
 </script>
 
@@ -20,12 +21,12 @@ defineProps(["cta"]);
         <div
           class="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4"
         >
-          <a
-            href="#"
+          <RouterLink
+            to="/SahazNetwork/price"
             class="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-center text-white bg-primary-100 rounded-lg hover:bg-primary-200 focus:ring-4 focus:ring-blue-300"
           >
             Lihat Selengkapnya
-          </a>
+          </RouterLink>
         </div>
       </div>
     </div>

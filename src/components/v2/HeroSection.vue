@@ -21,7 +21,7 @@ import { RouterLink } from "vue-router";
         class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0"
       >
         <RouterLink
-          to="/price"
+          to="/SahazNetwork/price"
           class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-primary-100 hover:bg-primary-200 focus:ring-4 focus:ring-primry-200 dark:focus:ring-blue-900"
         >
           Beli Sekarang
@@ -42,7 +42,7 @@ import { RouterLink } from "vue-router";
           </svg>
         </RouterLink>
         <RouterLink
-          to="/about"
+          to="SahazNetwork/about"
           class="inline-flex justify-center items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
         >
           Pelajari Lebih Lanjut

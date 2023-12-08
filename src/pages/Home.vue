@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { onMounted } from "vue";
 import HeroSection from "../components/v2/HeroSection.vue";
 import CardProduct from "../components/v2/CardProduct.vue";
 import FeatureList from "../components/v2/FeatureList.vue";
@@ -51,6 +52,13 @@ const cta = [
     desc: "Hadir dengan kualitas resolusi gambar 4K terbaik dan bandwidth mulai dari 100 Mbps. Dapatkan konten hiburan berkualitas yang dapat dinikmati kapan saja",
   },
 ];
+
+onMounted(() => {
+  scrollTo({
+    behavior: "smooth",
+    top: 0,
+  });
+});
 </script>
 
 <template>
