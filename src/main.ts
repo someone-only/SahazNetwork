@@ -3,6 +3,7 @@ import "./style.css";
 import App from "./App.vue";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import router from "./router"
 
 AOS.init({
   delay: 50,
@@ -10,4 +11,4 @@ AOS.init({
   once: true,
 });
 
-createApp(App).mount("#app");
+createApp(App).use(router).mount("#app");

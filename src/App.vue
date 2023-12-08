@@ -1,17 +1,19 @@
 <script setup lang="ts">
-import Navbar from "./components/Navbar.vue";
-import Header from "./components/Header.vue";
-import Main from "./components/Main.vue";
-import Footer from "./components/Footer.vue";
+import { RouterView, useRoute } from "vue-router";
+import Navbar from "./components/v2/Navbar.vue";
+import Footer from "./components/v2/Footer.vue";
+
+const route = useRoute();
 </script>
 
 <template>
-  <div class="bg-gradient-to-t from-amber-400 to-white from min-h-screen">
-    <Navbar />
-    <Header />
-    <Main />
-    <Footer />
-  </div>
+  <Navbar />
+  <router-view v-slot="{ Component }">
+    <transition name="fade">
+      <component :is="Component" :key="route.fullPath" />
+    </transition>
+  </router-view>
+  <Footer />
 </template>
 
 <style scoped></style>
